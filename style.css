@@ -1,0 +1,129 @@
+body {
+  background: url(imagetodo.jpg) no-repeat center fixed;
+  background-size: cover;
+  color: #000;
+  font-family: Lato, sans-serif;
+}
+
+.container {
+  display: block;
+  width: 450px;
+  margin: 30px 47% auto;
+  background-color: none;
+  border-radius: 3%;
+  text-align: center;
+}
+ul {
+  margin: auto;
+  padding: auto;
+}
+li * {
+  float: left;
+}
+li,
+h3 {
+  clear: both;
+  list-style: none;
+  text-align: center;
+}
+input,
+button {
+  outline: none;
+}
+button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  margin: 10px auto auto;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+button:hover {
+  color: #333;
+}
+
+h3,
+label[for="new-task"] {
+  /* Heading */
+  color: #000;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+input[type="text"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 20px;
+  height: 10px;
+  padding: 8px;
+  border: solid #fff;
+  background: #fff;
+  opacity: 0.37;
+  border-radius: 10px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+input[type="text"]:focus {
+  color: #333;
+}
+
+label[for="new-task"] {
+  /* New TO-DO Task */
+  display: block;
+  margin: 0 0 20px;
+}
+input#new-task {
+  float: left;
+  width: 318px;
+}
+p > button:hover {
+  color: #0fc57c;
+}
+
+li {
+  /* Task TO-DO list */
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+li > label {
+  font-size: 18px;
+  line-height: 40px;
+  width: 237px;
+  padding: 0 0 0 11px;
+}
+li > input[type="text"] {
+  width: 226px;
+}
+li > .delete:hover {
+  color: #cf2323;
+}
+
+#completed-tasks label {
+  /* Completed Section */
+  text-decoration: line-through;
+  color: #888;
+}
+
+ul li input[type="text"] {
+  /* Editing Task */
+  display: none;
+}
+
+ul li.editMode input[type="text"] {
+  display: block;
+}
+
+ul li.editMode label {
+  display: none;
+}
